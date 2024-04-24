@@ -1,1 +1,25 @@
-sss
+def xp(xp_heroi):
+    if xp_heroi < 1000:
+        return "Ferro"
+    elif 1001 <= xp_heroi <= 2000:
+        return "Bronze"
+    elif 2001 <= xp_heroi <= 5000:
+        return "Prata"
+    elif 5001 <= xp_heroi <= 7000:
+        return "Ouro"
+    elif 7001 <= xp_heroi <= 8000:
+        return "Platina"
+    elif 8001 <= xp_heroi <= 9000:
+        return "Ascendente"
+    elif 9001 <= xp_heroi <= 10000:
+        return "Imortal"
+    else:
+        return "Radiante"
+
+nome_heroi = input('Digite o nome do heroi:')
+xp_heroi = int(input('Digite a quantidade de Xp do heroi: '))
+
+xp_total = xp(xp_heroi)
+
+print(f'Nome do heroi é {nome_heroi}, seu nivel de rank é {xp_total}.')
+
